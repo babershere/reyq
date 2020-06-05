@@ -4,6 +4,8 @@ import pic01 from '../images/pic01.jpg'
 // import pic02 from '../images/pic02.jpg'
 import filledpic02 from '../images/filled-pic02.png'
 import pic03 from '../images/pic03.jpg'
+import Tooltip, { useTooltip, TooltipPopup } from "@reach/tooltip";
+
 
 class Main extends React.Component {
   render() {
@@ -129,8 +131,16 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
-          Phone: +1(949)-891-2787
           <ul className="icons">
+            <li>
+            </li>
+            <li>
+            <a 
+            type="button" 
+            class="icon fa-phone" 
+            data-container="body" data-original-title="{Phone Number}" data-toggle="popover" data-placement="top" data-content="+1(949)891-2787">
+              </a>
+            </li> 
             <li>
                <a
                 href="https://www.linkedin.com/in/rehmat-qureshi/"
@@ -160,6 +170,7 @@ class Main extends React.Component {
           </ul>
           {close}
         </article>
+        
       </div>
     )
   }
