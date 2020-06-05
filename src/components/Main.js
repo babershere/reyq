@@ -129,6 +129,7 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
+          Phone: +1(949)-891-2787
           <ul className="icons">
             <li>
                <a
